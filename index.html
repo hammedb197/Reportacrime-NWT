@@ -13,7 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
      <!-- Java Script and Jquery -->
-    <script src="ray/js/jquery-3.2.1.min.js"></script> 
+    <script src="ray/js/jquery-3.2.1.min.js"></script>
     <script src="ray/js/bootstrap.min.js"> </script>
 
     <!-- Custom fonts for this template -->
@@ -27,7 +27,7 @@
     <link href="css/reportacrime.min.css" rel="stylesheet">
   <!-- other CSS Files -->
     <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
-   
+
 
   </head>
 
@@ -72,24 +72,24 @@
   <header class="masthead" id="intro">
       <div class="intro-container">
         <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-  
+
           <ol class="carousel-indicators"></ol>
-  
+
           <div class="carousel-inner" role="listbox">
-  
+
             <div class="carousel-item active" style="background-image: url('img/header/1.jpg');">
               <div class="carousel-container">
                 <div class="carousel-content">
                     <div class="intro-text">
-                        <div class="intro-heading text-uppercase">Report A crime today</div>  
+                        <div class="intro-heading text-uppercase">Report A crime today</div>
                       <div class="intro-lead-in">It's Our Pleasure to have you here</div>
                         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Learn More</a>
-                        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="reportform.html">Report Now</a>                    
+                        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="reportform.html">Report Now</a>
                       </div>
                 </div>
               </div>
             </div>
-  
+
             <div class="carousel-item" style="background-image: url('img/header/2.jpg');">
               <div class="carousel-container">
                 <div class="carousel-content">
@@ -102,7 +102,7 @@
                 </div>
               </div>
             </div>
-  
+
             <div class="carousel-item" style="background-image: url('img/header/3.jpg');">
               <div class="carousel-container">
                 <div class="carousel-content">
@@ -115,7 +115,7 @@
                 </div>
               </div>
             </div>
-  
+
             <div class="carousel-item" style="background-image: url('img/header/4.jpg');">
               <div class="carousel-container">
                 <div class="carousel-content">
@@ -186,30 +186,48 @@
     </section>
 
     <!-- reported page -->
-            <section class="bg-light" id="reported">
-                <div class="container">
-        <div class="row">
+    <section class="bg-light" id="reported">
+        <div class="container">
+            <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">View reported cases</h2><br><br>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 reported-item">
-            <a class="reported-link" data-toggle="modal" href="#reportedModal1">
-              <div class="reported-hover">
-                <div class="reported-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 reported-item">
+                    <a class="reported-link" data-toggle="modal" data-target="#myModal" href="#reportedModal1">
+                        <div class="reported-hover">
+                            <div class="reported-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div><img class="img-fluid" src="img/reported/01-thumbnail.jpg" alt="Rape">
+                    </a>
+                <div class="reported-caption">
+                    <h4>Rape</h4>
+                    <p class="text-muted">View Rape cases</p>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/reported/01-thumbnail.jpg" alt="">
-            </a>
-            <div class="reported-caption">
-              <h4>Rape</h4>
-              <p class="text-muted">View Rape cases</p>
+
+  <!-- Modal --><div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+      <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-6 reported-item">
-            <a class="reported-link" data-toggle="modal" href="#reportedModal2">
+                </div>
+                <div class="col-md-4 col-sm-6 reported-item">
+            <a class="reported-link" data-toggle="modal" data-target="myModal" href="#reportedModal2">
               <div class="reported-hover">
                 <div class="reported-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -217,12 +235,44 @@
               </div>
               <img class="img-fluid" src="img/reported/02-thumbnail.jpg" alt="">
             </a>
+             <div class="modal fade" id="modal" role="dialog">
+      <div class="modal-dialog">
+
+      <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"  >&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+              <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="reported-caption">
               <h4>Domestic Violence</h4>
               <p class="text-muted">View Domestic violence related crime</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 reported-item">
+                <div class="col-md-4 col-sm-6 reported-item">
             <a class="reported-link" data-toggle="modal" href="#reportedModal3">
               <div class="reported-hover">
                 <div class="reported-hover-content">
@@ -236,7 +286,7 @@
               <p class="text-muted">View Child/Human Trafficking related crime</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 reported-item">
+                <div class="col-md-4 col-sm-6 reported-item">
             <a class="reported-link" data-toggle="modal" href="#reportedModal4">
               <div class="reported-hover">
                 <div class="reported-hover-content">
@@ -250,7 +300,7 @@
               <p class="text-muted">View car-theft related crime</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 reported-item">
+                <div class="col-md-4 col-sm-6 reported-item">
             <a class="reported-link" data-toggle="modal" href="#reportedModal5">
               <div class="reported-hover">
                 <div class="reported-hover-content">
@@ -264,7 +314,7 @@
               <p class="text-muted">View Internet related crime</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 reported-item">
+                <div class="col-md-4 col-sm-6 reported-item">
             <a class="reported-link" data-toggle="modal" href="#reportedModal6">
               <div class="reported-hover">
                 <div class="reported-hover-content">
@@ -278,12 +328,13 @@
               <p class="text-muted">View Kidnapping related crime</p>
             </div>
           </div>
-        </div>
+            </div>
       </div>
     </section>
-   
+
     <!-- Contact -->
     <section id="contact">
+        <form id="contactForm" name="sentMessage" action="" method="POST" novalidate>
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -293,11 +344,10 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name." required>
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
@@ -321,10 +371,10 @@
                   <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
                 </div>
               </div>
-            </form>
           </div>
         </div>
       </div>
+        </form>
     </section>
      <!-- Partners -->
      <section id="enquiry" class="py-5">
@@ -334,25 +384,25 @@
           <div class="col-md-3 col-sm-6">
             <h6 class="section-subheading text-muted"> The Nigeria Police</h6>
             <a href="http://www.npf.gov.ng">
-              <img class="img-fluid d-block mx-auto" src="img/logos/police.png" alt="POLICE">
+              <img class="img-fluid d-block mx-auto" src="img/logos/police.png" alt="police">
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
               <h6 class="section-subheading text-muted"> Department of State Security Service</h6>
             <a href="http://www.dss.gov.ng">
-              <img class="img-fluid d-block mx-auto" src="img/logos/dss.png" alt="DSS">
+              <img class="img-fluid d-block mx-auto" src="img/logos/dss.png" alt="dss">
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
               <h6 class="section-subheading text-muted">The Nigerian Army</h6>
             <a href="http://www.army.mil.ng/">
-              <img class="img-fluid d-block mx-auto" src="img/logos/army.png" alt="ARMY">
+              <img class="img-fluid d-block mx-auto" src="img/logos/army.png" alt="army">
             </a>
           </div>
           <div class="col-md-3 col-sm-6">
               <h6 class="section-subheading text-muted"> The Nigeria Security and Civil Defence Corps</h6>
             <a href="http://www.nscdc.gov.ng">
-              <img class="img-fluid d-block mx-auto" src="img/logos/nscdc.png" alt="NSCDC">
+              <img class="img-fluid d-block mx-auto" src="img/logos/nscdc.png" alt="nscdc">
             </a>
           </div>
         </div>
@@ -401,7 +451,7 @@
 
     <!-- reported Modals -->
 
-    
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
