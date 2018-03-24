@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Report Form</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="ray/js/jquery-3.2.1.min.js"></script>
+<script src="ray/js/bootstrap.min.js"> </script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/reportacrime.min.css" rel="stylesheet">
+<style>
+    #mainNav {background-color:black;}
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">ReportACrime.ng</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Back To ReportACrime </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Reportform page-->
+
+    <section class="bg-light" id="report">
+        <div class="container">
+            <form role="form" method="POST" action="contact_me.php" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-center">
+                            <h2 class="section-heading text-uppercase">Crime Report Form</h2>
+                        </div>
+                    </div>
+                        <div class="col-sm-4 sidenav">
+                            <div class="text-center">
+                            <!--1. Name -->
+                                <div class="form-group">
+                                    <label for="name">Your Name in Full:</label>
+                                    <input type="text" class="form-control" id="name" name="ReportersName" placeholder="Enter your name" required="required">
+                                </div>
+                          <!--2. Email -->
+                                <div class="form-group">
+                                    <label for="email">Your Email address:</label>
+                                    <input type="email" class="form-control" id="email" name="Email" required="required">
+                                </div>
+                          <!--3. PhoneNumber -->
+                                <div class="form-group">
+                                    <label for="phone">Your Phone Number:</label>
+                                    <input type="tel" class="form-control" id="phone" name="PhoneNumber">
+                                </div>
+                           <!--4. Anonymous -->
+                                <div class="radio" id="opin">
+                                    <label>Would you want to be Anonymous to the Public?</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">Yes</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">No</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">I don't mind</label>
+                                </div>
+                           <!--5. crimeaddress -->
+                                <div class="form-group">
+                                    <label>Address of place where Crime occured:</label>
+                                    <input type="text" class="form-control" id="crimeaddress" name="CrimeAddress">
+                                </div>
+                             <!--6. crimecity -->
+                                <div class="form-group">
+                                    <label>Town where Crime occured:</label>
+                                    <input type="text" class="form-control" id="crimecity" name="CrimeCity">
+                                </div>
+                          <!--7. Crime State -->
+                                <div class="form-group">
+                                    <label>State of Reported Crime:</label>
+                                    <select class="form-control required" id="crimestate" name="state-of-reportedcrime">
+                                        <option class="first" value="">State</option>
+                                        <option value="abia">Abia</option>
+                                        <option value="adamawa">Adamawa</option>
+                                        <option value="akwa ibom">Akwa Ibom</option>
+                                        <option value="anambra">Anambra </option>
+                                        <option value="bauchi">Bauchi</option>
+                                        <option value="bayelsa">Bayelsa </option>
+                                        <option value="benue">Benue</option>
+                                        <option value="borno">Borno</option>
+                                        <option value="cross river">Cross River  </option>
+                                        <option value="delta">Delta </option>
+                                        <option value="ebonyi">Ebonyi </option>
+                                        <option value="edo">Edo</option>
+                                        <option value="ekiti">Ekiti</option>
+                                        <option value="enugu">Enugu  </option>
+                                        <option value="fct">FCT</option>
+                                        <option value="gombe">Gombe </option>
+                                        <option value="imo">Imo</option>
+                                        <option value="jigawa">Jigawa</option>
+                                        <option value="kaduna">Kaduna</option>
+                                        <option value="kano">Kano</option>
+                                        <option value="katsina">Katsina</option>
+                                        <option value="kebbi">Kebbi</option>
+                                        <option value="kogi">Kogi</option>
+                                        <option value="kwara">Kwara</option>
+                                        <option value="lagos">Lagos</option>
+                                        <option value="nasarawa">Nasarawa</option>
+                                        <option value="niger">Niger</option>
+                                        <option value="ogun">Ogun </option>
+                                        <option value="ondo">Ondo</option>
+                                        <option value="osun">Osun</option>
+                                        <option value="oyo">Oyo</option>
+                                        <option value="plateau">Plateau</option>
+                                        <option value="rivers">Rivers</option>
+                                        <option value="sokoto">Sokoto</option>
+                                        <option value="taraba">Taraba   </option>
+                                        <option value="yobe">Yobe</option>
+                                        <option value="zamfara">Zamfara  </option>
+                                    </select>
+                                </div>
+                            <!--8.crimecategory -->
+                                <div class="form-group">
+                                    <label for="category">Crime Category:</label>
+                                    <select class="form-control" id="category" name="crimecategory">
+                                        <option>Please select an Option</option>
+                                        <option>Rape</option>
+                                        <option>Domestic Violence</option>
+                                        <option>Fraud</option>
+                                        <option>Kidnapping</option>
+                                        <option>Bribery/Corruption</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+                        <!--9. crimedate -->
+                                <div class="form-group">
+                                    <label>When did the crime occur?(Date):</label>
+                                    <input type="date" name="crimedate" id="crimedate">
+                                </div>
+                        <!--crimetime -->
+                                <div class="form-group">
+                                    <label>Around what time did the crime occur?</label>
+                                     <input type="time" name="crimetime">
+                                </div>
+                         <!--9. datereported -->
+                                <div class="form-group">
+                                    <label>Date Crime Reported?(today's date):</label>
+                                    <input id="datecrimereported" type="date" name="datereported">
+                                </div>
+                        <!--Crimedescription -->
+                                <div class="form-group">
+                                    <label>Describe the crime in details::</label>
+                                    <textarea class="form-control" rows="5" id="Crimedescription"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 sidenav">
+                            <div class="text-center">
+                            <!--2. criminalname -->
+                            <div class="form-group">
+                                <label>Criminal's Name in Full:</label>
+                                <input type="text" class="form-control" id="criminalname" name="CrimnalName" required="required">
+                            </div>
+                                <!--2. criminalemail -->
+                            <div class="form-group">
+                                <label>Criminal's Email address:</label>
+                                <input type="email" class="form-control" id="criminalemail" name="CriminalEmail">
+                            </div>
+                                <!--3. criminalphone -->
+                            <div class="form-group">
+                                <label>Criminal's Phone Number:</label>
+                                <input type="tel" class="form-control" id="criminalphone" name="criminalphone">
+                            </div>
+
+                                 <!--5. criminaladdress -->
+                            <div class="form-group">
+                                <label>Do you know where the criminal resides? If Yes, state the address below</label>
+                                <input type="text" class="form-control" id="criminaladdress" name="CriminalAddress">
+                            </div>
+
+                              <!--2. witnessname -->
+                            <div class="form-group">
+                                <label>First Witness' Name in Full:</label>
+                                <input type="text" class="form-control" id="witnessname" name="witnessName">
+                            </div>
+                                <!--2. witnessemail -->
+                            <div class="form-group">
+                                <label>First Witness' Email address:</label>
+                                <input type="email" class="form-control" id="witnessemail" name="witnessEmail">
+                            </div>
+                                <!--3. witnessphone -->
+                            <div class="form-group">
+                                <label>First Witness' Phone Number:</label>
+                                <input type="tel" class="form-control" id="witnessphone" name="witnessphone">
+                            </div>
+
+                                 <!--5. witnessaddress -->
+                            <div class="form-group">
+                                <label>First Witness' Address</label>
+                                <input type="text" class="form-control" id="witnessaddress" name="witnessAddress">
+                            </div>
+                                  <!--2. witnessname2 -->
+                            <div class="form-group">
+                                <label>Second Witness' Name in Full:</label>
+                                <input type="text" class="form-control" id="witnessname2" name="witnessName2">
+                            </div>
+                                <!--2. witnessemail2 -->
+                            <div class="form-group">
+                                <label>Second Witness' Email address:</label>
+                                <input type="email" class="form-control" id="witnessemail2" name="witnessEmail2">
+                            </div>
+                                <!--3. witnessphone2 -->
+                            <div class="form-group">
+                                <label>Second Witness' Phone Number:</label>
+                                <input type="tel" class="form-control" id="witnessphone2" name="witnessphone2">
+                            </div>
+
+                                 <!--5. witnessaddress2 -->
+                            <div class="form-group">
+                                <label>Second Witness' Address</label>
+                                <input type="text" class="form-control" id="witnessaddress2" name="witnessAddress2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 sidenav"><br>
+                        <div class="text-center">
+                        <h5>Evidence Upload</h5><br>
+                             <!--pictureevidence1 -->
+                        <div class="form-group">
+                            <label for="pictureevidence1">Upload First Picture Evidence</label>
+                            <input type="file" id="pictureevidence1" name="pictureevidence1">
+                        </div><br>
+                             <!--pictureevidence2 -->
+                        <div class="form-group">
+                            <label for="pictureevidence2">Upload Second Picture Evidence</label>
+                            <input type="file" id="pictureevidence2" name="pictureevidence2">
+                        </div><br>
+                             <!--pictureevidence3 -->
+                        <div class="form-group">
+                            <label for="pictureevidence3">Upload Third Picture Evidence</label>
+                            <input type="file" id="pictureevidence3" name="pictureevidence3">
+                        </div><br>
+                             <!--videoevidence1 -->
+                        <div class="form-group">
+                            <label for="videoevidence1">Upload First Video Evidence</label>
+                            <input type="file" id="videoevidence1" name="videoevidence1">
+                        </div><br>
+                             <!--videoevidence2 -->
+                        <div class="form-group">
+                            <label for="videoevidence2">Upload Second Video Evidence</label>
+                            <input type="file" id="videoevidence2" name="videoevidence2">
+                        </div><br>
+                             <!--videoevidence3 -->
+                        <div class="form-group">
+                            <label for="videoevidence3">Upload Third Video Evidence</label>
+                            <input type="file" id="videoevidence3" name="videoevidence3">
+                        </div><br>
+                             <!--audioevidence1 -->
+                        <div class="form-group">
+                            <label for="audioevidence1">Upload First Audio Evidence</label>
+                            <input type="file" id="audioevidence1" name="audioevidence1">
+                        </div><br>
+                             <!--audioevidence2 -->
+                        <div class="form-group">
+                            <label for="audioevidence2">Upload Second Audio Evidence</label>
+                            <input type="file" id="audioevidence2" name="audioevidence2">
+                        </div><br>
+                             <!--audioevidence3 -->
+                        <div class="form-group">
+                            <label for="audioevidence3">Upload Third Audio Evidence</label>
+                            <input type="file" id="audioevidence3" name="audioevidence3">
+                        </div><br>
+                        <div>
+                            <button type="submit" class="btn btn-info" onclick="return confirm("Are you sure you want to submit ?")">Submit</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </form>
+        </div>
+    </section>
+        <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/reportacrime.min.js"></script>
+  </body>
+</html>
+
